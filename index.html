@@ -530,20 +530,20 @@
             <h3>Statistics</h3>
             <div class="stats-grid">
                 <div class="stat-card">
-                    <div class="stat-label">Week Score</div>
-                    <div class="stat-value" x-text="weekScore"></div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-label">Best Streak</div>
-                    <div class="stat-value" x-text="bestStreak + ' days'"></div>
+                    <div class="stat-label">All goals completed today</div>
+                    <div class="stat-value" x-text="goals.length === 0 ? '-' : (allGoalsCompletedToday ? '✅ Yes' : 'Not yet')"></div>
                 </div>
                 <div class="stat-card">
                     <div class="stat-label">Total Goals</div>
                     <div class="stat-value" x-text="goals.length"></div>
                 </div>
                 <div class="stat-card">
-                    <div class="stat-label">All goals completed today</div>
-                    <div class="stat-value" x-text="goals.length === 0 ? '-' : (allGoalsCompletedToday ? '✅ Yes' : 'Not yet')"></div>
+                    <div class="stat-label">Best Streak</div>
+                    <div class="stat-value" x-text="bestStreak + ' days'"></div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Week Score</div>
+                    <div class="stat-value" x-text="weekScore"></div>
                 </div>
             </div>
         </div>
